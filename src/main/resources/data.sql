@@ -1,0 +1,10 @@
+INSERT INTO Teacher (name, salary, birth_date) VALUES ('teacher 1', 2200000, '1970-01-01');
+INSERT INTO Teacher (name, salary, birth_date) VALUES ('teacher 2', 3300000, '1970-01-01');
+INSERT INTO Teacher (name, salary, birth_date) VALUES ('teacher 3', 4400000, '1970-01-01');
+INSERT INTO Teacher (name, salary, birth_date) VALUES ('teacher 4', 5500000, '1970-01-01');
+INSERT INTO Teacher (name, salary, birth_date) VALUES ('teacher 5', 6600000, '1970-01-01');
+INSERT INTO Teacher (name, salary, birth_date) VALUES ('teacher 6', 7700000, '1970-01-01');
+INSERT INTO Teacher (name, salary, birth_date) VALUES ('teacher 7', 8800000, '1970-01-01');
+INSERT INTO Teacher (name, salary, birth_date) VALUES ('teacher 8', 9900000, '1970-01-01');
+INSERT INTO Teacher (name, salary, birth_date) VALUES ('teacher 9', 1100000, '1970-01-01');
+INSERT INTO Teacher (name, salary, birth_date) VALUES ('teacher 10', 2200000, '1970-01-01');
