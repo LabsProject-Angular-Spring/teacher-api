@@ -2,6 +2,7 @@ package co.edu.unilibre.labsproject.teacher.entity;
 
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Transient;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -28,6 +29,9 @@ public class Teacher implements Serializable{
 	@Column(name = "birth_date")
 	@Temporal(TemporalType.DATE)
 	private Date birthDate;
+	
+	@Transient
+	private Long port;
 
 	public Long getId() {
 		return id;
@@ -61,5 +65,13 @@ public class Teacher implements Serializable{
 		this.birthDate = birthDate;
 	}
 	
+	
+	public Long getPort() {
+		return port;
+	}
+
+	public void setPort(Long port) {
+		this.port = port;
+	}
 	
 }
