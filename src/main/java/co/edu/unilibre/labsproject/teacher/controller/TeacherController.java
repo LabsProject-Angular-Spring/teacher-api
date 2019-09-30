@@ -24,12 +24,19 @@ public class TeacherController {
 	
 	@GetMapping("/list")
 	public List<Teacher> getList(){
-		return teacherService.getAllList();
+		//return teacherService.getAllList();
+		return teacherService.getAllList().stream().map(teacher -> {
+			teacher.setPort(port);
+			return teacher;
+		}).collect(Collectors.toList());
 	}
 	
 	@GetMapping("/{id}")
 	public Teacher getById(@PathVariable Long id) {
-		return teacherService.getById(id);
+		//return teacherService.getById(id);
+		Teacher teacher = teacherService.getById(id);
+		teacher.setPort(port);
+		return teacher;
 	}
 	
 }
